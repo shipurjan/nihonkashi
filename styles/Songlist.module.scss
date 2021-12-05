@@ -1,0 +1,25 @@
+@import 'variables.module';
+
+.songlist{
+    list-style-type: none;
+    width: 100%;
+    padding-inline-start: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.songlist li{
+    background-color: $color-primary;
+    color: $color-background;
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+    height: 1.5em;
+    text-align: center;
+    line-height: 1em;
+}
+
+.songlist li:hover{
+    background-color: $color-primary-darker;
+    color: $color-background-darker;
+}

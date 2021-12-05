@@ -1,0 +1,25 @@
+@import 'variables.module';
+
+.textarea{
+    border: 2px solid $color-primary-lighter;
+    background-color: $color-background-darker;
+    color: $color-primary;
+    display: flex;
+    font-size: 12pt;
+    justify-content: center;
+	border-radius: 10px;
+    padding: 10px;
+	height: 60px;
+	width: 230px;
+    width:75vw;
+    min-width: 20vw;
+    max-width:90vw;
+    min-height: 10vh;
+    height: 33vh;
+}
+
+.textarea:focus{
+    border-color: $color-primary-lighter;
+    background-color: $color-background;
+    color: $color-primary-darker;
+}

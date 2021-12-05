@@ -1,0 +1,33 @@
+$color-primary: #130f0c;
+$color-secondary: #b9391c;
+$color-background: #dfe3e2;
+
+$color-primary-darker: darken($color-primary, 10);
+$color-primary-lighter: lighten($color-primary, 10);
+
+$color-secondary-darker: darken($color-secondary, 10);
+$color-secondary-lighter: lighten($color-secondary, 10);
+
+$color-background-darker: darken($color-background, 10);
+$color-background-lighter: lighten($color-background, 10);
+
+$color-verse-odd: $color-secondary-lighter;
+$color-verse-even: $color-secondary-darker;
+
+:export { 
+    colorPrimary: $color-primary;
+    colorSecondary: $color-secondary;
+    colorBackground: $color-background;
+
+    colorPrimaryDarker: $color-primary-darker;
+    colorPrimaryLighter: $color-primary-lighter;
+
+    colorSecondaryDarker: $color-secondary-darker;
+    colorSecondaryLighter: $color-secondary-lighter;
+
+    colorBackgroundDarker: $color-background-darker;
+    colorBackgroundLighter: $color-background-lighter;
+
+    colorVerseOdd: $color-verse-odd;
+    colorVerseEven: $color-verse-even;
+}

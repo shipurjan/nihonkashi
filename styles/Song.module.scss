@@ -1,0 +1,41 @@
+@import 'variables.module';
+
+.youtube{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.youtube iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.checked{
+    margin: 1em;
+}
+
+.lyrics{
+    max-width: 560px;
+    width: 100%;
+    color: $color-primary;
+}
+.lyrics verse{
+    display: block;
+    margin: 10px 5px;
+    padding: 10px 10px;
+    border-left: 1px solid $color-verse-even;
+}
+.lyrics verse:nth-child(odd){
+    padding-left: 20px;
+    border-left: 1px solid  $color-verse-odd;
+}
+.lyrics line{
+    display: block;
+}
