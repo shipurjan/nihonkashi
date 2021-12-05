@@ -19,7 +19,12 @@
     line-height: 1em;
 }
 
+.songlist li a{
+    display: block;
+    width: 100%;
+}
+
 .songlist li:hover{
     background-color: $color-primary-darker;
-    color: $color-background-darker;
+    color: $color-background-lighter;
 }

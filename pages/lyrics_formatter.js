@@ -34,7 +34,7 @@ export default function About() {
         <meta name="description" content={description} />
       </Head>
       <Layout title={title} subtitle={subtitle}>
-        <small>{"(ruby tags will get converted to brackets syntax)"}</small><br/>
+        <p>{"(ruby tags will get converted to brackets syntax)"}</p><br/>
         <Button click={getText} text="Format" />
         Input:
         <Textarea id="input" readonly={false}/>

@@ -25,7 +25,7 @@ function convertBracketsToRuby(line){
 }
 
 function getLyrics(lyrics){
-    return lyrics.map(verse => <verse key={verse.key}>{verse.map(line => <line key={line.key}>{convertBracketsToRuby(line)}</line>)}</verse>);
+    return lyrics.map(verse => <verse key={verse.key}>{verse.map(line => <line lang="ja" key={line.key}>{convertBracketsToRuby(line)}</line>)}</verse>);
 }
 
 function isLyricsChecked(isLyricsComplete){
@@ -42,7 +42,7 @@ function isLyricsChecked(isLyricsComplete){
       height={20}
       width={20}
       alt="unverified.png"
-      title="Lyrics and furigana checked by me (to the best of my ability)"
+      title="Lyrics and furigana NOT checked by me"
     /> Lyrics not verified</>
 }
 

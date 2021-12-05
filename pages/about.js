@@ -3,7 +3,6 @@ import Layout from '../components/Layout'
 
 export default function About() {
   const title = "About";
-  const subtitle = "A page with Japanese lyrics (and furigana) to songs I like";
   const description = "Lyrics to Japanese songs.\n日本語の歌詞";
   return (
     <>
@@ -11,8 +10,8 @@ export default function About() {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Head>
-      <Layout title={title} subtitle={subtitle}>
-
+      <Layout title={title}>
+        <p>A page with Japanese lyrics (and furigana) to songs I like</p>
       </Layout>
     </>
   )

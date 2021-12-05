@@ -5,6 +5,8 @@
     overflow: hidden;
     width: 100%;
     padding-top: 56.25%;
+    max-width: 560px;
+    margin-bottom: 1em;
 }
 
 .youtube iframe{
@@ -22,20 +24,46 @@
 }
 
 .lyrics{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 1em;
     max-width: 560px;
     width: 100%;
     color: $color-primary;
 }
 .lyrics verse{
-    display: block;
-    margin: 10px 5px;
-    padding: 10px 10px;
-    border-left: 1px solid $color-verse-even;
+    text-transform: full-width; 
+	writing-mode: vertical-rl;
+    display: flex;
+    flex-direction: column;
+    text-combine-upright: none; 
+    padding: 0.5em 0;
+    margin: 0.5em 0;
+    border-top: 2px solid $color-verse-border-first;
 }
-.lyrics verse:nth-child(odd){
-    padding-left: 20px;
-    border-left: 1px solid  $color-verse-odd;
+
+.lyrics verse:nth-child(3n+2){
+    border-color: $color-verse-border-second;
 }
+
+.lyrics verse:nth-child(3n+3){
+    border-color: $color-verse-border-third;
+}
+
 .lyrics line{
-    display: block;
+    display: flex;
+    align-items: flex-end;
+}
+
+.lyrics line{
+    width: 2em;
+}
+
+.lyrics line ruby rt{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
