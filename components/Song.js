@@ -16,9 +16,16 @@ function addRubySubtags(word){
 
 function convertBracketsToRuby(line){
   let substr_array = line.split(/\((.*?)\]/g);
-  const new_array = substr_array.map((substr) => {
+  let merged_array = [substr_array[0]];
+
+  for (let i = 1; i < substr_array.length; i+=2) {
+    let two = '(' + substr_array[i] + ']' + substr_array[i+1];
+    merged_array.push(two);
+  } merged_array = merged_array.filter(e=>e);
+
+  const new_array = merged_array.map((substr) => {
       if(substr.includes(")["))
-        return <ruby>{addRubySubtags('('+substr+']')}</ruby>;
+        return <ruby>{addRubySubtags(substr)}</ruby>;
       return substr;
   })
   return new_array;

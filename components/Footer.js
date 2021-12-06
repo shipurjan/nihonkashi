@@ -5,9 +5,9 @@ import styles from '../styles/Footer.module.scss'
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.image}>
+      <div className={styles.imageContainer}>
       <Link href="https://github.com/shipurjan/nihonkashi">
-        <a><Image
+        <a><Image className={styles.image}
         src="/github.png"
         height={20}
         width={20}
@@ -15,7 +15,9 @@ export default function Footer() {
       /></a>
       </Link>
       </div>
-
+      <div>
+        2021
+      </div>
     </footer>
   )
 }
