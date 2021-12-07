@@ -1,9 +1,9 @@
+import { useRouter } from 'next/router'
 import Song from '../../components/Song'
-import songdata from './json/songlist.json'
-
 
 export default function Songpage() {
-    return <Song songdata={
-        songdata[1]
-    } />
+    const router = useRouter();
+    let path = router.pathname;
+    let id = parseInt(path.slice(path.lastIndexOf("/")+1));
+    return <Song key={id.toString()} id={id} />
 }

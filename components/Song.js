@@ -3,6 +3,7 @@ import Head from 'next/head'
 import reactStringReplace from 'react-string-replace';
 import Layout from '../components/Layout'
 import styles from '../styles/Song.module.scss'
+import songlist from '../pages/songs/json/songlist.json'
 
 
 function addRubySubtags(word){
@@ -32,7 +33,11 @@ function convertBracketsToRuby(line){
 }
 
 function getLyrics(lyrics){
-    return lyrics.map(verse => <verse key={verse.key}>{verse.map(line => <line lang="ja" key={line.key}>{convertBracketsToRuby(line)}</line>)}</verse>);
+    return lyrics.map(
+      (verse, index) => <verse key={index}>{verse.map(
+        (line, index) => <line lang="ja" key={index}>{convertBracketsToRuby(line)}</line>
+      )}</verse>
+    );
 }
 
 function isLyricsChecked(isLyricsComplete){
@@ -53,7 +58,10 @@ function isLyricsChecked(isLyricsComplete){
     /> Lyrics not verified</>
 }
 
-export default function Home({songdata}) {
+
+export default function Home({id}) {
+  let index = songlist.findIndex(function(song) { return song.id == id; });
+  const songdata = songlist[index];
   const title = songdata.title;
   const romanized_title = songdata.romanized_title;
   const artist = songdata.artist;

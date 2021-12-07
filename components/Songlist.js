@@ -4,12 +4,14 @@ import songlist from '../pages/songs/json/songlist.json';
 
 
 function listSongs(list){
-  return list.map((data) => 
-    <li key={data.id}>
-        <Link href={"/songs/"+data.id.toString()}>
+  let newlist = list.filter(e => e.id >= 0);
+  return newlist.map((data) => {
+    return <li key={(data.id).toString()}>
+        <Link href={"/songs/"+(data.id).toString()}>
           <a>&quot;{data.title}&quot; by {data.artist}</a>
         </Link>
-    </li>);
+    </li>
+  })
 }
 
 export default function Layout() {
