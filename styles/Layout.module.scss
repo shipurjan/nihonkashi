@@ -1,18 +1,17 @@
 @import 'variables.module';
 
 .title{
-  line-height: 1em;
-  margin: 0;
   color: $color-secondary;
   text-align: center;
+  margin: 0;
+  font-weight: 700;
 }
 .subtitle{
+  color: $color-secondary;
   text-align: center;
-  line-height: 1em;
   margin: 0;
   margin-bottom: 1em;
-  font-weight: normal;
-  color: $color-secondary;
+  font-weight: 500;
 }
 
 .container {

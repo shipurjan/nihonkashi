@@ -8,7 +8,7 @@ function listSongs(list){
   return newlist.map((data) => {
     return <li key={(data.id).toString()}>
         <Link href={"/songs/"+(data.id).toString()}>
-          <a>&quot;{data.title}&quot; by {data.artist}</a>
+          <a title={'"'+data.romanized_title+'" by '+data.romanized_artist}>&quot;{data.title}&quot; by {data.artist}</a>
         </Link>
     </li>
   })
