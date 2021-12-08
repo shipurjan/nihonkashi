@@ -1,12 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
-
+@font-face {
+	font-family: 'Noto Sans JP';
+	src: url('/fonts/NotoSansJP-Thin.otf') format('opentype');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Noto Sans JP';
+	src: url('/fonts/NotoSansJP-Light.otf') format('opentype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Noto Sans JP';
+	src: url('/fonts/NotoSansJP-Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Noto Sans JP';
+	src: url('/fonts/NotoSansJP-Medium.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Noto Sans JP';
+	src: url('/fonts/NotoSansJP-Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Noto Sans JP';
+	src: url('/fonts/NotoSansJP-Black.otf') format('opentype');
+	font-weight: 900;
+	font-style: normal;
+}
 html, body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, 'Noto Sans JP', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 a {
