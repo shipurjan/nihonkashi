@@ -220,7 +220,7 @@
     {
         "id": 3,
         "artist": "古関裕而",
-        "romanized_artist": "Koseki Yūji",
+        "romanized_artist": "Koseki Yuuji",
         "title": "露営の歌",
         "romanized_title": "Roei no Uta",
         "youtube_url": "https://www.youtube.com/watch?v=gRKy0VcWru8",
@@ -291,7 +291,7 @@
     {
         "id": 4,
         "artist": "いとう かなこ",
-        "romanized_artist": "Itō Kanako",
+        "romanized_artist": "Itou Kanako",
         "title": "Hacking To the Gate",
         "romanized_title": "Hacking To the Gate",
         "youtube_url": "https://www.youtube.com/watch?v=SBQprWeOx8g",
@@ -375,6 +375,6 @@
             "(飲)[の]み(込)[こ]まれてゆく",
             "(孤独)[こどく]の(観測者)[かんそくしゃ]"
             ]
-            ]
+        ]
     }
 ]
