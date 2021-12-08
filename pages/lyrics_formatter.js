@@ -3,14 +3,26 @@ import Layout from '../components/Layout'
 import Textarea from '../components/Textarea';
 import Button from '../components/Button';
 
-function getText(){
-  let input = document.getElementById("input").value;
+function removeRubyTags(input){
   input = input.replaceAll(/<rp>(.*?)<\/rp>/ig,"");
   input = input.replaceAll(/<\/?ruby>/ig,"");
   input = input.replaceAll(/<rb>/ig,"(");
   input = input.replaceAll(/<\/rb>/ig,")");
   input = input.replaceAll(/<rt>/ig,"[");
   input = input.replaceAll(/<\/rt>/ig,"]");
+  return input;
+}
+
+function whiteCharactersToNewline(input){
+  input = input.replaceAll(/[\s　]/ig, "\n");
+  return input;
+}
+
+function getText(){
+  let input = document.getElementById("input").value;
+  input = removeRubyTags(input);
+  input = whiteCharactersToNewline(input);
+  
   let lyrics = input.split("\n");
   let array = [];
 
