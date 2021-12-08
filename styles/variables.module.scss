@@ -15,21 +15,5 @@ $color-verse-border-first: adjust-hue($color-secondary, 0);
 $color-verse-border-second: adjust-hue($color-secondary, 20);
 $color-verse-border-third: adjust-hue($color-secondary, 40);
 
-:export { 
-    colorPrimary: $color-primary;
-    colorSecondary: $color-secondary;
-    colorBackground: $color-background;
-
-    colorPrimaryDarker: $color-primary-darker;
-    colorPrimaryLighter: $color-primary-lighter;
-
-    colorSecondaryDarker: $color-secondary-darker;
-    colorSecondaryLighter: $color-secondary-lighter;
-
-    colorBackgroundDarker: $color-background-darker;
-    colorBackgroundLighter: $color-background-lighter;
-
-    colorVerseBorderFirst: $color-verse-border-first;
-    colorVerseBorderSecond: $color-verse-border-second;
-    colorVerseBorderThird: $color-verse-border-third;
-}
+$color-debug-ruby-rb-background-first: #ff000040;
+$color-debug-ruby-rb-background-second: #00ff0040;

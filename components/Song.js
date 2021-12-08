@@ -5,6 +5,22 @@ import Layout from '../components/Layout'
 import styles from '../styles/Song.module.scss'
 import songlist from '../pages/songs/json/songlist.json'
 
+function convertHalfWidthToFullWidth(string){
+  const translationDict = {
+    '0':'０',
+    '1':'１',
+    '2':'２',
+    '3':'３',
+    '4':'４',
+    '5':'５',
+    '6':'６',
+    '7':'７',
+    '8':'８',
+    '9':'９'
+  };
+  string = string.replace(/[0-9]/g, m => translationDict[m]);
+  return string;
+}
 
 function addRubySubtags(word){
   word = reactStringReplace(word, /\((.*?)\)/g, (match, i) => (
@@ -16,7 +32,7 @@ function addRubySubtags(word){
 }
 
 function convertBracketsToRuby(line){
-  let substr_array = line.split(/\((.*?)\]/g);
+  let substr_array = convertHalfWidthToFullWidth(line).split(/\((.*?)\]/g);
   let merged_array = [substr_array[0]];
 
   for (let i = 1; i < substr_array.length; i+=2) {
@@ -84,6 +100,9 @@ export default function Home({id}) {
         <div className={styles.youtube}>
           <iframe unselectable="on" src={"https://www.youtube.com/embed/"+youtube_url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
+{/* To "debug" rubified words:
+        <div className={styles.lyrics + ' ' + styles.debug}>
+*/}
         <div className={styles.lyrics}>
             {lyrics}
         </div>

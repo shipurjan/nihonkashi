@@ -61,8 +61,8 @@
     align-items: flex-end;
 }
 
-.lyrics line{
-    width: 2em;
+.lyrics ruby{
+    ruby-align: center;
 }
 
 .lyrics line ruby rt{
@@ -70,4 +70,11 @@
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+}
+
+.debug line ruby:nth-child(odd) rb{
+    background-color: $color-debug-ruby-rb-background-first;
+}
+.debug line ruby:nth-child(even) rb{
+    background-color: $color-debug-ruby-rb-background-second;
 }
