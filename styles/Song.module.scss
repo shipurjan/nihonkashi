@@ -45,6 +45,7 @@
     padding: 0.5em 0;
     margin: 0.5em 0;
     border-top: 2px solid $color-verse-border-first;
+    overflow-x: auto;
 }
 
 .lyrics verse:nth-child(3n+2){
