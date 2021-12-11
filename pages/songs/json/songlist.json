@@ -13,6 +13,45 @@
         ]
     },
     {
+        "id": -1,
+        "artist": "placeholder",
+        "romanized_artist": "",
+        "title": "",
+        "romanized_title": "",
+        "youtube_url": "https://youtu.be/S3EKEwMXmXY",
+        "lyrics_complete": false,
+        "lyrics": [
+            [
+            ]
+        ]
+    },
+    {
+        "id": -1,
+        "artist": "placeholder",
+        "romanized_artist": "",
+        "title": "",
+        "romanized_title": "",
+        "youtube_url": "https://www.youtube.com/watch?v=T_lC2O1oIew",
+        "lyrics_complete": false,
+        "lyrics": [
+            [
+            ]
+        ]
+    },
+    {
+        "id": -1,
+        "artist": "placeholder",
+        "romanized_artist": "",
+        "title": "",
+        "romanized_title": "",
+        "youtube_url": "https://youtu.be/iTPNaUsjksM",
+        "lyrics_complete": false,
+        "lyrics": [
+            [
+            ]
+        ]
+    },
+    {
         "id": 0,
         "artist": "Chata",
         "romanized_artist": "Chata",
