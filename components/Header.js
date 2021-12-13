@@ -11,8 +11,8 @@ export default function Header() {
           </Link>
         </li>
         <li>
-        <Link href="/lyrics_formatter">
-            <a>Lyrics formatter</a>
+        <Link href="/lyrics-converter">
+            <a>Lyrics converter</a>
           </Link>
         </li>
         <li>

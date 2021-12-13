@@ -36,8 +36,8 @@ function getText(){
 }
 
 export default function About() {
-  const title = "Lyrics formatter";
-  const subtitle = "Text to JSON.";
+  const title = "Lyrics converter";
+  const subtitle = "Text to JSON";
   const description = "Text to JSON formatter";
   return (
     <>
@@ -46,7 +46,8 @@ export default function About() {
         <meta name="description" content={description} />
       </Head>
       <Layout title={title} subtitle={subtitle}>
-        <p>{"(ruby tags will get converted to brackets syntax)"}</p>
+        <p>For now this is mostly for myself, but in the future this will be used to convert the text sent in by people</p>
+        <small>(ruby tags will get converted to brackets syntax)</small>
         <Button click={getText} text="Format" />
         Input:
         <Textarea id="input" readonly={false}/>
