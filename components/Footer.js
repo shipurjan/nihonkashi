@@ -13,7 +13,7 @@ export default function Footer() {
           width={20}
           alt=""
         /></a>
-        </Link>・2021
+        </Link>・2022
       </div>
       <div>
         Deployments:
