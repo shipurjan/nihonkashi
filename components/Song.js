@@ -63,15 +63,15 @@ function isLyricsChecked(isLyricsComplete){
         height={20}
         width={20}
         alt="verified.png"
-        title="Lyrics and furigana checked by me (to the best of my ability)"
+        title="Lyrics and furigana verified"
       /> Lyrics verified</>
     return <><Image
       src="/unverified.png"
       height={20}
       width={20}
       alt="unverified.png"
-      title="Lyrics and furigana NOT checked by me"
-    /> Lyrics not verified</>
+      title="Lyrics and furigana not yet verified"
+    /> Lyrics not yet verified</>
 }
 
 
